@@ -23,7 +23,7 @@ const Home = ({colors}) => {
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM20 17H24V19H20V17ZM17 12H24V14H17V12ZM19 7H24V9H19V7Z"></path></svg>
                 </button></Link>
 
-                <a href="../AKSHAY-CHAUDHARI-RESUME-18.pdf"><button className='resume'>get resume
+                <a href="/AKSHAY-CHAUDHARI-RESUME-18.pdf"><button className='resume'>get resume
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path></svg>
                 </button></a>
 
@@ -31,7 +31,7 @@ const Home = ({colors}) => {
             </div>
             <div className="col-lg-6  col-md-6  text-center">
               {/* You can add an image or animation here later */}
-              <img class="neon-border img-fluid" src="rounded_profile_image_resizeds.png" alt="Profile Image" />
+              <img class="neon-border img-fluid" src="/rounded_profile_image_resizeds.png" alt="Profile Image" />
 
             </div>
           </div>
