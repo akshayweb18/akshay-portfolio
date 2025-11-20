@@ -3,7 +3,8 @@ import {Link} from "react-router-dom"
 const Home = ({colors}) => {
   return (
     <>
-      <section className={colors ? 'navbar-light home-section' : 'navbar-dark home-section'}>
+    <div  className={colors ? 'navbar-light home-section' : 'navbar-dark home-section'}>
+      <section>
         <div className="container">
           <div className="row align-items-center for-mob-desk">
             <div className="col-lg-6 col-md-6 text-start">
@@ -13,17 +14,17 @@ const Home = ({colors}) => {
               </h1>
               <h1 className="pink-red">UI/UX Developer</h1>
               <div className='mt-2 icons-groups'>
-                <i class="fa fa-github" aria-hidden="true"></i>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                {/* <i class="fa fa-github" aria-hidden="true"></i> */}
+              <a href="https://www.linkedin.com/in/akshayweb18"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a> 
+                <a href="https://www.instagram.com/itsakshay.18/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://x.com/Akshay71066"><i class="fa fa-twitter-square" aria-hidden="true"></i></a> 
               </div>
               <div className='group-btns-home'>
                 <Link to="/Contactus"><button className='contact-me'>Contact Me
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM20 17H24V19H20V17ZM17 12H24V14H17V12ZM19 7H24V9H19V7Z"></path></svg>
                 </button></Link>
 
-                <a href="/AKSHAY-CHAUDHARI-RESUME-18.pdf"><button className='resume'>get resume
+                <a href="/AKSHAY-CHAUDHARI-RESUME.pdf"><button className='resume'>get resume
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path></svg>
                 </button></a>
 
@@ -31,7 +32,7 @@ const Home = ({colors}) => {
             </div>
             <div className="col-lg-6  col-md-6  text-center">
               {/* You can add an image or animation here later */}
-              <img class="neon-border img-fluid" src="/rounded_profile_image_resizeds.png" alt="Profile Image" />
+              <img class="neon-border img-fluid" src="../rounded_profile_image_resizeds.png" alt="Profile Image" />
 
             </div>
           </div>
@@ -42,7 +43,7 @@ const Home = ({colors}) => {
 
 
 
-      <section className={colors ? 'navbar-light skills-slider' : 'navbar-dark skills-slider'}>
+      <section className="skills-slider">
 
         <div className='container'>
 
@@ -58,7 +59,7 @@ const Home = ({colors}) => {
                     loading="lazy"
 
                     className="h-full w-auto rounded-lg"
-                    src="https://abusaid.netlify.app/_next/static/media/html.ed6aaa50.svg"
+                    src="/assets/html.png"
                   />
                 </div>
 
@@ -69,7 +70,7 @@ const Home = ({colors}) => {
                     loading="lazy"
 
                     className="h-full w-auto rounded-lg"
-                    src="https://abusaid.netlify.app/_next/static/media/css.e5e99f36.svg"
+                   src="/assets/css.png"
                   />
                 </div>
 
@@ -80,7 +81,17 @@ const Home = ({colors}) => {
                     loading="lazy"
 
                     className="h-full w-auto rounded-lg"
-                    src="https://abusaid.netlify.app/_next/static/media/javascript.b472cbc1.svg"
+                     src="/assets/js.png"
+                  />
+                </div>
+
+                <div className="skill-card">
+                  <img
+                    alt="JavaScript"
+                    loading="lazy"
+
+                    className="h-full w-auto rounded-lg"
+                     src="/assets/boot.png"
                   />
                 </div>
 
@@ -91,7 +102,7 @@ const Home = ({colors}) => {
                     loading="lazy"
 
                     className="h-full w-auto rounded-lg"
-                    src="https://abusaid.netlify.app/_next/static/media/react.512a3a7e.svg"
+                    src="/assets/react.png"
                   />
 
                 </div>
@@ -102,9 +113,21 @@ const Home = ({colors}) => {
                     loading="lazy"
 
                     className="h-full w-auto rounded-lg"
-                    src="https://abusaid.netlify.app/_next/static/media/bootstrap.9e6ddba8.svg"
+                   src="/assets/sass.png"
                   />
                 </div>
+                
+
+                <div className="skill-card">
+                  <img
+                    alt="Bootstrap"
+                    loading="lazy"
+
+                    className="h-full w-auto rounded-lg"
+                   src="/assets/jq.png"
+                  />
+                </div>
+                
 
                 {/* Figma */}
                 <div className="skill-card">
@@ -113,7 +136,7 @@ const Home = ({colors}) => {
                     loading="lazy"
 
                     className="h-full w-auto rounded-lg"
-                    src="https://abusaid.netlify.app/_next/static/media/figma.00471f51.svg"
+                     src="/assets/figma.png"
                   />
                 </div>
 
@@ -124,7 +147,7 @@ const Home = ({colors}) => {
                     loading="lazy"
 
                     className="h-full w-auto rounded-lg"
-                    src="https://abusaid.netlify.app/_next/static/media/git.21d80414.svg"
+                    src="/assets/github.png"
                   />
                 </div>
               </div>
@@ -139,7 +162,7 @@ const Home = ({colors}) => {
 
 
 
-      <section className={colors ? 'navbar-light profile' : 'navbar-dark profile'}>
+      <section className="profile">
 
         <div className='container'>
           <div className='row'>
@@ -166,7 +189,7 @@ const Home = ({colors}) => {
             <div className='col-lg-12'>
               <div className='flex-education-box'>
                 <div>
-                  <h5 className="title-fix">EXPERINCE  ( 2.6 YEARS )</h5>
+                  <h5 className="title-fix">EXPERIENCE  ( 2.6 YEARS )</h5>
                   <ul>
                     <li style={{ listStyle: "none" }}><h5>Responsibilities</h5></li>
                     <li>Developed responsive user interfaces and reusable components for web applications.</li>
@@ -216,7 +239,7 @@ const Home = ({colors}) => {
       </section>
 
 
-      <section className={colors ? 'navbar-light education' : 'navbar-dark education'}>
+      <section className="education">
         <div className='container'>
           <div className='row'>
             <div className='col-lg-12'>
@@ -276,7 +299,7 @@ const Home = ({colors}) => {
 
 
 
-
+</div>
 
     </>
 

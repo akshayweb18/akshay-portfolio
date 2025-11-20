@@ -9,13 +9,13 @@ const Project = ({ colors }) => {
                         <a href="https://mutualfund.adityabirlacapital.com/">
                             <div class="company-item">
 
-                                <img src="/aditya.png" alt="Aditya Birla" />
+                                <img src="../aditya.png" alt="Aditya Birla" />
                                 
                             </div>
                         </a>
                         <a href="https://www.mahindramanulife.com/">
                             <div class="company-item">
-                                <img src="/mahendra.png" alt="Mahendra" />
+                                <img src="../mahendra.png" alt="Mahendra" />
                                 
                             </div>
                         </a>
@@ -28,22 +28,21 @@ const Project = ({ colors }) => {
                         </a>
                        <a href="https://jmfl.com">
                          <div class="company-item">
-                            <img src="/jm.png" alt="JM Finance" />
-                            
+                            <img src="../jm.png" alt="JM Finance" /> 
                         </div>
                        </a>
 
 
                         <a href="https://anandrathi.com/">
                             <div class="company-item">
-                                <img src="/anand.png" alt="anand rathi" />
+                                <img src="../anand.png" alt="anand rathi" />
                                
                             </div>
                         </a>
 
                         <a href="https://www.moneysukh.com/">
                             <div class="company-item">
-                                <img src="/money.png" alt="anand rathi" />
+                                <img src="../money.png" alt="anand rathi" />
                             
                             </div>
                         </a>

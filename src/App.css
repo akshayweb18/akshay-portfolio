@@ -503,9 +503,10 @@ nav a {
   .fixeolor h5 {
     font-size: 20px;
     margin: 0;
-}
+  }
+
   .flex-items-nav {
-    flex-direction:row;
+    flex-direction: row;
     gap: 20px;
   }
 
@@ -774,7 +775,7 @@ nav a {
 
   /* light pink background */
   text-align: center;
-
+height: 100vh;
 }
 
 .companies-section h2 {
@@ -932,7 +933,7 @@ nav a {
     flex-wrap: wrap;
   }
 
-    .forms-flex{
+  .forms-flex {
     display: flex;
     flex-direction: column;
   }
@@ -986,13 +987,13 @@ nav a {
   }
 
   .company-item {
-   background: #fff;
-        width: 140px;
-        height: 140px;
+    background: #fff;
+    width: 140px;
+    height: 140px;
 
   }
 
-    .skills-wrapper {
+  .skills-wrapper {
     display: grid;
     gap: 0;
 
@@ -1000,11 +1001,11 @@ nav a {
     flex-wrap: wrap;
   }
 
-      .forms-flex{
+  .forms-flex {
     display: flex;
     flex-direction: column;
   }
-  
+
 }
 
 
@@ -1067,14 +1068,16 @@ nav a {
     height: 150px;
 
   }
-    .skills-wrapper {
+
+  .skills-wrapper {
     display: grid;
     gap: 0;
 
     grid-template-columns: auto auto auto;
     flex-wrap: wrap;
   }
-      .forms-flex{
+
+  .forms-flex {
     display: flex;
     flex-direction: column;
   }
@@ -1144,14 +1147,15 @@ nav a {
 
   }
 
-      .forms-flex{
+  .forms-flex {
     display: flex;
     flex-direction: column;
   }
-  
+
 }
 
 @media (min-width:768px) and (max-width:991px) {
+  
   .home-section h1 {
     font-weight: 700;
     line-height: 40px;
@@ -1203,7 +1207,7 @@ nav a {
 
   }
 
-    .company-item img {
+  .company-item img {
     max-width: 100%;
     max-height: 60%;
     object-fit: contain;
@@ -1216,7 +1220,8 @@ nav a {
     height: 150px;
 
   }
-  .forms-flex{
+
+  .forms-flex {
     display: flex;
     flex-direction: row;
   }
@@ -1224,13 +1229,50 @@ nav a {
 
 
 
+@media (max-width:575px) {
+  
+  .profile {
+    padding:77px 0;
+}
+.education {
+    padding: 77px 0;
+}
+  .home-section {
+
+    padding-top: 61px !important;
+    padding-bottom: 65px;
+  }
+
+  .contact-me {
+    font-size: 12px !important;
+    white-space: nowrap;
+  }
+
+  .resume {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+
 
 @media (max-width:767px) {
   .nav-desk {
     display: block;
   }
+
+    .mobile-switches{
+    display: block !important;
+  
+        position: absolute;
+        top: 23px;
+        right: 52px;
+  }
 }
 
+.mobile-switches{
+display: none;
+}
 
 
 
@@ -1259,12 +1301,15 @@ nav a {
 
 /* Hamburger */
 .hamburger {
-  display: none; /* only mobile */
+  display: none;
+  /* only mobile */
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  z-index: 1001; /* above other content */
+  z-index: 1001;
+  /* above other content */
 }
+
 .hamburger .line {
   width: 25px;
   height: 3px;
@@ -1273,10 +1318,12 @@ nav a {
 
 /* Sidebar (Mobile) */
 .side-menu {
-  display: none; /* hidden by default */
+  display: none;
+  /* hidden by default */
 }
 
 @media (max-width: 768px) {
+
   /* Hide desktop menu on mobile */
   .list-of-nav {
     display: none;
@@ -1303,8 +1350,9 @@ nav a {
     background: #222;
     padding-top: 60px;
     transition: right 0.3s ease;
-    z-index: 2000; /* above page content */
-    box-shadow: -3px 0 5px rgba(0,0,0,0.3);
+    z-index: 2000;
+    /* above page content */
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.3);
   }
 
   /* Open state */
@@ -1334,9 +1382,11 @@ nav a {
     font-weight: bold;
     color: #fff;
     cursor: pointer;
-    z-index: 2100; /* above sidebar */
+    z-index: 2100;
+    /* above sidebar */
   }
 }
+
 .hamburger .line {
   width: 25px;
   height: 3px;
@@ -1345,10 +1395,100 @@ nav a {
 }
 
 
+@media (max-width:991px) {
+  .skills-slider {
+        padding-top: 50px;
+    }
+}
+@media (max-width:767px) {
+  .form-switch .form-check-input {
+    --bs-form-switch-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e);
+    width: 47px;
+    margin-left: -3.5em;
+    background-image: var(--bs-form-switch-bg);
+    background-position: left center;
+    border-radius: 2em;
+    transition: background-position .15s ease-in-out;
+}
+.form-check-input {
+    cursor: pointer;
+    width: 46px;
+    height: 26px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.hamburger .line {
+    width: 30px;
+    height: 4px;
+    background: linear-gradient(to left, #ff0000, #ff69b4);
+    border-radius: 2px;
+}
+}
 
 
 
 
 
+
+
+
+
+
+/* Skills Wrapper */
+.skills-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Skill Card Container */
+.skill-card {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Floating Animation for Icons */
+.skill-card img {
+  height: 100%;
+  width: auto;
+  border-radius: 12px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Staggered Animation Delays */
+.skill-card:nth-child(1) img { animation-delay: 0s; }
+.skill-card:nth-child(2) img { animation-delay: 0.2s; }
+.skill-card:nth-child(3) img { animation-delay: 0.4s; }
+.skill-card:nth-child(4) img { animation-delay: 0.6s; }
+.skill-card:nth-child(5) img { animation-delay: 0.8s; }
+.skill-card:nth-child(6) img { animation-delay: 1s; }
+.skill-card:nth-child(7) img { animation-delay: 1.2s; }
+
+/* Optional: Neon HR Line */
+.neon-hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #00f7ff, #0077ff);
+  margin-top: 30px;
+}
 
 

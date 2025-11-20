@@ -15,10 +15,10 @@ const Contactus = ({ colors }) => {
         "oR2gsamIHIrMPB-DO"    // replace with your EmailJS public key
       )
       .then(
-        (result) => {
+        (result) => {   
           console.log(result.text);
           alert("Message sent successfully ✅");
-          e.target.reset(); // clear form
+          e.target.reset(); // clear form 
         },
         (error) => {
           console.log(error.text);
